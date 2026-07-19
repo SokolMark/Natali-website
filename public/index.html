@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Креативне Портфоліо</title>
+
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <h1>Креативне Портфоліо</h1>
+    <nav>
+        <a href="#works">Роботи</a>
+        <a href="#about">Про нас</a>
+    </nav>
+</header>
+
+<div class="spacer">
+    <h2>Гортай вниз до переходу 👇</h2>
+</div>
+
+<!-- Головна секція з двома фото -->
+<section class="stage">
+    <div class="layers">
+        <!-- Нижнє фото (перше) -->
+        <svg class="layer" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <image href="../src/assets/photo1.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid slice"/>
+        </svg>
+
+        <!-- Верхнє фото (друге), яке з'являється через маску -->
+        <svg class="layer" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+                <mask id="mask1" maskUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="100" height="100" fill="black"/>
+                    <!-- Сюди JS буде додавати білі лінії -->
+                    <g id="blinds1"></g>
+                </mask>
+            </defs>
+            <image href="../src/assets/photo2.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid slice" mask="url(#mask1)"/>
+        </svg>
+    </div>
+</section>
+
+<div class="spacer">
+    <h2>Кінець переходу! Гортай вгору, щоб побачити ефект у зворотньому напрямку 👆</h2>
+</div>
+
+<footer class="site-footer">
+    <div class="contact-info">
+        <h3>Зв'язатися з нами</h3>
+        <p>Email: hello@example.com | Telegram: @username</p>
+    </div>
+</footer>
+
+<script src="../src/scripts/index.js"></script>
+</body>
+</html>
