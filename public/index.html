@@ -3,54 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natalie Sandul - Interior Visualization</title>
+    <title>Natali Sandul - Interior Visualization</title>
     <link rel="stylesheet" href="../src/styles/main.css">
 </head>
 <body>
 <header class="header">
-    <div class="logo">NATALIE SANDUL</div>
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="works.html">Our Works</a>
-        <a href="prices.html">Prices</a>
-        <a href="contacts.html">Contacts</a>
-    </nav>
+    <button class="menu-btn" aria-label="Toggle Menu">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+        </svg>
+    </button>
+    <div class="logo">Natali Sandul</div>
+
+    <div class="lang-switcher">
+        <button class="lang-btn lang-option">Українська</button>
+        <button class="lang-btn lang-current">English</button>
+    </div>
 </header>
 
 <main class="hero">
-    <div class="hero-title">
-        <h1>
-            <span class="title-first">Natalie</span>
-            <span class="title-last">Sandul</span>
-        </h1>
+    <div class="curtain-line"></div>
+    <div class="white-curtain"></div>
+
+    <div class="hero-content">
+        <div class="text-block">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </div>
 
-    <div class="carousel-container">
-        <div class="carousel-item type-portrait" style="background-image: url('../src/assets/carousel-1.webp')"></div>
-        <div class="carousel-item type-square" style="background-image: url('../src/assets/carousel-2.webp')"></div>
-        <div class="carousel-item type-landscape" style="background-image: url('../src/assets/carousel-3.webp')"></div>
-        <div class="carousel-item type-portrait" style="background-image: url('../src/assets/carousel-4.webp')"></div>
-        <div class="carousel-item type-square" style="background-image: url('../src/assets/carousel-5.webp')"></div>
-        <div class="carousel-item type-landscape" style="background-image: url('../src/assets/carousel-6.webp')"></div>
-        <div class="carousel-item type-portrait" style="background-image: url('../src/assets/carousel-7.webp')"></div>
-        <div class="carousel-item type-square" style="background-image: url('../src/assets/carousel-8.webp')"></div>
-        <div class="carousel-item type-landscape" style="background-image: url('../src/assets/carousel-9.webp')"></div>
-        <div class="carousel-item type-portrait" style="background-image: url('../src/assets/carousel-10.webp')"></div>
-        <div class="carousel-item type-square" style="background-image: url('../src/assets/carousel-11.webp')"></div>
-        <div class="carousel-item type-landscape" style="background-image: url('../src/assets/carousel-12.webp')"></div>
-        <div class="carousel-item type-portrait" style="background-image: url('../src/assets/carousel-13.webp')"></div>
-        <div class="carousel-item type-square" style="background-image: url('../src/assets/carousel-14.webp')"></div>
-        <div class="carousel-item type-landscape" style="background-image: url('../src/assets/carousel-15.webp')"></div>
+    <div class="hero-image-wrapper">
+        <div class="hero-image-push">
+            <img src="../src/assets/images/Main-window/hero-isometric.png" alt="3D Interior Isometric Plan" class="hero-image">
+        </div>
     </div>
-
-    <div class="backdrop"></div>
 </main>
 
-<footer class="footer">
-    <p>Contact: info@example.com</p>
-</footer>
+<div class="contact-panel">
+    <div class="contact-content">
+        <h2>Contacts</h2>
+        <p><a href="mailto:example@mail.com">example@mail.com</a></p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+            <a href="#">Behance</a>
+        </div>
+    </div>
+</div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
 <script src="../src/scripts/index.js"></script>
 </body>
 </html>
